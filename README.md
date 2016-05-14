@@ -27,3 +27,5 @@ You could copy the WAR file to TOMCAT_HOME/webapps/ and start your Tomcat server
 Note: Unser under JSPProject/WebContent/WEB-INF/, please open the web.xml file. Under the tag "<context-param>", you have "<param-value>". Please change the path under "<param-value>" to your desired location to store the uploaded file for the log file parsing project.
 
 I recommend Method 1.
+
+About the Project: This project solves some interesting problems.
