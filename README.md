@@ -2,7 +2,7 @@
 
 Method 1:
 
-Please download Apache Tomcat 7.0.69 from https://tomcat.apache.org/download-70.cgi. After downloading, please start the Apache Tomcat server. You could also install Tomcat as mentioned at https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-7-on-ubuntu-14-04-via-apt-get.
+Please download Apache Tomcat 7.0.69 from https://tomcat.apache.org/download-70.cgi. After downloading, please start the Apache Tomcat server. (You could also install Tomcat as mentioned at https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-7-on-ubuntu-14-04-via-apt-get.)
 Now, copy the WAR file to TOMCAT_HOME/webapps/ and start your Tomcat server. Then using the URL http://localhost:8080/JSPProject, you should be able to access the application. 
 Then double-click on the JSPProject.war file. Go to WEB-INF. There you can see the web.xml file. Please open the web.xml so that you can edit it. Under the tag "<context-param>", you have "<param-value>". Please change the path under "<param-value>" to the desired location to store the uploaded file for parsing it. Please note that the application should have permission to upload the file to the specified directory.
 
