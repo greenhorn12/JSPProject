@@ -4,7 +4,7 @@ Method 1:
 
 Please download Apache Tomcat 7.0.69 from https://tomcat.apache.org/download-70.cgi. After downloading, please start the Apache Tomcat server. (You could also install Tomcat as mentioned at https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-7-on-ubuntu-14-04-via-apt-get.)
 Now, copy the WAR file to TOMCAT_HOME/webapps/ and start your Tomcat server. Then using the URL http://localhost:8080/JSPProject, you should be able to access the application. 
-Then double-click on the JSPProject.war file. Go to WEB-INF. There you can see the web.xml file. Please open the web.xml so that you can edit it. Under the tag "<context-param>", you have "<param-value>". Please change the path under "<param-value>" to the desired location to store the uploaded file for parsing it. Please note that the application should have permission to upload the file to the specified directory.
+Then double-click on the JSPProject.war file. Go to WEB-INF. There you can see the web.xml file. Please open the web.xml so that you can edit it. Under the tag "context-param", you have "param-value". Please change the path under "param-value" to the desired location to store the uploaded file for parsing it. Please note that the application should have permission to upload the file to the specified directory.
 
 
 Method 2:
@@ -25,7 +25,7 @@ To quote the instructions,
     The wizard assumes you want to create a new Web project with the same name as the WAR file. If you accept this choice, the project will be created with the same servlet version as specified by the WAR file and in the same location. If you want to override these settings, you can click New and specify your new settings in the Dynamic Web Project wizard.
     Click Finish to populate the Web project."
 
-4. Now, under JSPProject/WebContent/WEB-INF/ we have web.xml. Please open that file. Under the tag "<context-param>", you have "<param-value>". Please change the path under "<param-value>" to the desired location to store the uploaded file for parsing it. Please note that the application should have permission to upload the file to the specified directory. The input file to the file parsing problem is a text file.
+4. Now, under JSPProject/WebContent/WEB-INF/ we have web.xml. Please open that file. Under the tag "context-param", you have "param-value". Please change the path under "param-value" to the desired location to store the uploaded file for parsing it. Please note that the application should have permission to upload the file to the specified directory. The input file to the file parsing problem is a text file.
 5. Now, you are set. In Project Explorer in Eclipse, right-click on JSPProject -> Run As -> Run on Server. Choose "Tomcat v7.0 Server at localhost" and click on "Finish". You should see the web page in Eclipse's builtin web browser. You could also copy the URL, and paste it on your browser to access the application from your browser.
 
 
